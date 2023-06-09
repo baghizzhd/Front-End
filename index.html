@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Penjualan dan Pembelian</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Dashboard Penjualan dan Pembelian</h1>
+  <div class="chart-container">
+    <canvas id="sales-purchase-chart"></canvas>
+  </div>
+  <div>
+    <label for="period">Pilih periode:</label>
+    <select id="period">
+      <option value="monthly">Bulanan</option>
+      <option value="yearly">Tahunan</option>
+    </select>
+  </div>
+
+    <h1>Form Input Data Transaksi</h1>
+  <form id="transaction-form">
+    <table id="transaction-table">
+      <thead>
+        <tr>
+          <th>Inventory</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Discount</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="inventory[]" required></td>
+          <td><input type="text" name="description[]" required></td>
+          <td><input type="number" name="quantity[]" min="1" required></td>
+          <td><input type="number" name="price[]" min="0" required></td>
+          <td><input type="number" name="discount[]" min="0" required></td>
+          <td><input type="number" name="subtotal[]" readonly></td>
+          <td><button type="button" class="delete-row">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" id="add-row">Add Row</button>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

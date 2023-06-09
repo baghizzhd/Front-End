@@ -1,0 +1,59 @@
+.chart-container {
+    width: 600px;
+    margin: 20px auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  #transaction-table th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #add-row{
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+ 
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-row {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-row:hover {
+    background-color: #d32f2f;
+  }
+  
